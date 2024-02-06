@@ -1,0 +1,38 @@
+[
+    {
+        "logoSrc": "https://logowik.com/content/uploads/images/t_upwork-icon.jpg",
+        "tittle": "UX/UI designer",
+        "company": "Upwork",
+        "description": "On Upwork you'll find a range of top freelancers and agencies, from developers and development agencies to designers and creative agencies, copywriters.",
+        "location": "Remote only"
+    },
+    {
+        "logoSrc": "https://logowik.com/content/uploads/images/985_google_g_icon.jpg",
+        "tittle": "Part-time UX designer",
+        "company": "Google",
+        "description": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking.",
+        "location": "International"
+    },
+    {
+        "logoSrc": "https://logowik.com/content/uploads/images/329_linkedin.jpg",
+        "tittle": "Web designer",
+        "company": "Linkedin",
+        "description": "LinkedIn, the world's largest professional network. The mission of LinkedIn is simple: connect the world's professional.",
+        "location": "CA, USA"
+    },
+    {
+        "logoSrc": "https://logowik.com/content/uploads/images/instagram-rounded3444.jpg",
+        "tittle": "UI deisgner",
+        "company": "Instagram",
+        "description": "Instagram is a photo and video-sharing social networking service owned by Facebook, Inc. ",
+        "location": "CA, USA"
+    },
+    {
+        "logoSrc": "https://www.svgrepo.com/show/475669/periscope-color.svg",
+        "tittle": "Product designer",
+        "company": "Periscope",
+        "description": "eriscope is a live video streaming app for Android and iOS developed by Kayvon Beykpour and Joe Bernstein and acquired by Twitter before launch in 2015.",
+        "location": "Remote only"
+    }
+  ]
+  
