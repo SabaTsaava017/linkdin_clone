@@ -1,0 +1,410 @@
+/* Global Header */
+.global-header-content{
+    display: flex;
+    height: 80px;
+    gap: 13px;
+    width: 100%;
+    padding-right:20px;
+    justify-content: space-between;
+}
+
+.global-header-left-side{
+    display: flex;
+    justify-content: space-around;
+}
+.global-header-right-side{
+    display: flex;
+}
+.global-header-logo{
+    user-select: none;
+    width: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.global-header-nav-container{
+    display: flex;
+    max-width: 712px;
+    justify-content: space-between;
+    gap: 7%;
+}
+.global-header-nav-ul{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.navigation-list-text span{
+    text-decoration: none;
+    color: inherit;
+}
+.header-navigation-list{
+    display: grid;
+    grid-template-columns: minmax(60px, 90px);
+    height: 80px;
+    position: relative;
+}
+.header-navigation-list a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    font-family: "Gotham Pro";
+    user-select: none;
+}
+.navigation-list-image{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    user-select: none;
+}
+.navigation-list-image svg path{
+    transition: 0.3s;
+}
+.navigation-list-text{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.navigation-list-text p{
+    color: #181818;
+    text-align: center;
+    font-family: "Gotham Pro", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.header-navigation-list::before{
+    content: '';
+    position: absolute;
+    background:#0275B1 ;
+    width: 0%;
+    left: 50%;
+    bottom: 0;
+    height: 2px;
+    transition: 0.3s;
+    border-radius: 15px;
+}
+
+.global-header-search{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.global-header-search-content{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.global-header-search-img{
+    width: 24px;
+    height: 24px;
+    user-select: none;
+}
+.global-header-search-input input{
+    outline: none;
+    border: none;
+    font-family: Gotham Pro;
+    font-weight: 400;
+}
+.global-header-search-input input::placeholder{
+    color: #CECECE;
+    font-family: Gotham Pro;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    user-select: none;
+}
+.global-header-sign-in{
+    margin-left: auto;
+}
+.global-header-sign-in-content a{
+    color: inherit;
+    text-decoration: none;
+}
+.global-header-sign-in-content{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 5px;
+}
+.join-now{
+    width: 125px;
+}
+.join-now p{
+    font-family: "Gotham Pro";
+    font-weight: 500;
+    font-size: 16px;
+    padding: 12px 24px;
+    color: rgb(87, 86, 86);
+    transition: 0.3s;
+}
+.sign-in p{
+    font-family: "Gotham Pro";
+    font-weight: 500;
+    font-size: 16px;
+    color: #0a66c2;
+    transition: 0.3s;
+}
+.sign-in{
+    border-radius: 25px;
+    border: 1px solid #0a66c2;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* user styles */
+
+.signed-up{
+    display: grid;
+    align-items: center;
+    max-width: 440px;
+    justify-content: space-between;
+    grid-template-columns: minmax(170px, 380px) 80px;
+}
+.profile{
+    display: flex;
+    gap:15px;
+    margin-right:auto;
+}
+.profile-picture{
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+.profile-info{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+}
+.profile-name{
+    display: flex;
+    gap:10px;
+}
+.profile-name p{
+    color: #181818;
+    font-family: Gotham Pro;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.profile-name span{
+    font-family: Gotham Pro;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    color: rgba(24, 24, 24, 0.20);
+    user-select: none;
+}
+.profile-viewers p{
+    color: #747474;
+    font-family: "Gotham Pro";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    user-select: none;
+}
+.other{
+    width: 90px;
+    height: 80px;
+    user-select: none;
+}
+.other-content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.other-content-circles{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 50%;
+    
+}
+.other-content-text{
+    height: 50%;
+    text-align: center;
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+
+}
+.other-content-text h3{
+    color: #181818;
+    text-align: center;
+    font-family: Gotham Pro;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+/* Hovers */
+.header-navigation-list:hover svg path{
+    stroke: #0275B1;
+}
+.sign-in p:hover{
+    color: #074a8e;
+}
+.join-now p:hover{
+    color: rgb(0, 0, 0);
+}
+.header-navigation-list:hover::before{
+    width: 80%;
+    left: 10%;
+}
+.header-navigation-list:hover .navigation-list-text p{
+    color: #0275B1;
+}
+/* Responsive header */
+.global-header-responsive, .global-header-responsive-menu{
+    display: none
+}
+@media (max-width: 950px) {
+    .global-header{
+        position: fixed;
+        width: 100%;
+    }
+    .global-header-nav-container{
+        display: none;
+    }
+    .global-header-right-side{
+        display: none;
+    }
+    .global-header-responsive{
+        display: flex;
+        align-items: center;
+    }
+    .global-header-responsive-bars{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        user-select: none;
+        width: 90px;
+    }
+    .burger-bars {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+    
+    .burger-bar {
+        width: 40px;
+        height: 5px;
+        background-color: #0275B1;
+        transition: 0.3s;
+    }
+    
+    .burger-bar.active:nth-child(1){
+        transform: translateY(12px) rotate(-45deg);
+    }
+    .burger-bar.active:nth-child(2){
+        opacity: 0;
+    }
+    .burger-bar.active:nth-child(3){
+        transform: translateY(-12px) rotate(45deg);
+    }
+    .global-header-responsive-menu{
+        position: fixed;
+        right: -100%;
+        top: 80px;
+        transition: 0.5s;
+        display: block;
+        width: 320px;
+        border-left: 3px solid #0275B1;
+        height: 100%;
+        border-top: 3px solid #0275B1;
+    }
+    .global-header-responsive.active body{
+        overflow: none;
+    }
+    .responsive-menu-content{
+        padding: 20px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .responsive-search{
+        padding: 0 10px;
+    }
+    .responsive-search input{
+        width: 100%;
+        height: 25px;
+        outline: none;
+        border: 2px solid #0275B1;
+        border-radius: 15px;
+        padding: 0 10px;
+        font-family: "Gotham Pro";
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .global-header-responsive-menu.active{
+        right: 0%;
+    }
+    .responsive-list ul{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40px 40px 40px 40px 40px;
+        list-style: none;
+        gap: 5px;
+    }
+    .responsive-list ul li{
+        border: 2px solid #0275B1;
+        border-radius: 15px;
+        transition: 0.3s;
+    }
+    .link-box{
+        display: flex;
+        height: 100%;
+        text-decoration: none;
+        color: inherit;
+        padding: 0px 10px;
+        gap: 5px;
+    }
+    .link-box-img{
+        display: flex;
+        align-items: center;
+    }
+    .link-box-text{
+        display: flex;
+        align-items: center;
+        transition: 0.3s;
+    }
+    .global-header-sign-in-content{
+        justify-content: center;
+        gap: 15px;
+    }
+    .global-header-sign-in{
+        margin: 0;
+        width: 100%;
+    }
+    .link-box-img path{
+        transition: 0.3s;
+    }
+    .responsive-list li:hover{
+        background-color: #0275B1;
+    }
+    .responsive-list li:hover .link-box-text{
+        color: white;
+    }
+    .responsive-list li:hover .link-box-img path{
+        stroke: white;
+    }
+}
