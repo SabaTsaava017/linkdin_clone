@@ -1,0 +1,199 @@
+.global-footer{
+    width: 100%;
+    display: inline-flex;
+    height: 20vh;
+    background: #F7F9FB;
+}
+.global-footer-middle-content{
+    max-width: 100%;
+    margin: 0 auto;
+}
+.global-footer-content {
+    display: grid;
+    grid-template-columns: 70px minmax(70px, 490px) minmax(70px, 170px) minmax(70px, 270px);
+    padding:30px 20px;
+    gap: 65px;
+}
+.global-footer-navigation-container{
+    display: flex;
+    flex-direction: column;
+}
+.global-footer-navigation {
+    display: grid;
+    gap: 35px;
+    grid-template-columns: minmax(100px, 150px) minmax(100px, 150px) minmax(100px, 150px);
+}
+.footer-navigation-lists a{
+    text-decoration: none;
+    color: inherit;
+}
+.global-footer-navigation ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.global-footer-navigation li{
+    color: #181818;
+    font-family: Gotham Pro;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.global-footer-logo{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    user-select: none;
+}
+.global-footer-logo a{
+    text-decoration: none;
+    text-align: none;
+    color: inherit;
+    font-family: 'Gotham Pro';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    user-select: none;
+}
+.global-footer-logo span{
+    color: #0275B1;
+}
+.global-footer-user-help{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.user-help-field {
+    display: flex;
+    justify-content: space-between;
+    width: 170px;
+    height: 32px;
+    padding: 0 10px;
+    border-radius: 4px;
+    border: 1px solid #0275B1;
+    cursor: pointer;
+    transition: 0.3s;
+    user-select: none;
+}
+.user-help-field:hover {
+    background-color: #0275B1;
+    color: white;
+}
+.help-field-image svg path{
+    transition: 0.3s;
+}
+.user-help-field:hover .help-field-image svg path{
+    stroke:white;
+}
+.help-field-text {
+    display: flex;
+    align-items: center;
+}
+.help-field-text p {
+    color: #0275B1;
+    font-family: Gotham Pro;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.user-help-field:hover .help-field-text p {
+    color: white;
+}
+.help-field-image{
+    display: flex;
+    align-items: center;
+}
+.global-footer-navigation-title h3{
+    color: #181818;
+    font-family: Gotham Pro;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 30px;
+    height: 11px;
+    user-select: none;
+}
+.global-footer-language-option select {
+    border-radius: 4px;
+    border: 1px solid #F0F0F0;
+    outline: none;
+    background: #FFF;
+    width: 100%; 
+    height: 32px;
+    text-transform: uppercase;
+    padding-left: 15px;
+    appearance: none;
+    /* background-image: url(../../../app/components/images/footerIcons/chevron-down.svg); */
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 5px;
+    background-size: 16px;
+    user-select: none;
+}
+@media (max-width: 1100px) {
+    .global-footer-content{
+        gap: 30px;
+    }
+}
+@media (max-width: 1000px) {
+    .global-footer-navigation{
+        gap: 10px;
+    }
+}
+@media (max-width:950px) {
+    .global-footer-content{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .global-footer-logo-img{
+        display: flex;
+        justify-content: center;
+    }
+    .global-footer-logo-text{
+        display: flex;
+        justify-content: center;
+    }
+    .global-footer-navigation-title{
+        display: flex;
+        justify-content: center;
+    }
+    .global-footer-navigation-title h3{
+        margin-bottom: 20px;
+    }
+    .global-footer-navigation{
+        justify-content: center;
+    }
+    .global-footer-user-help{
+        display: flex;
+        align-items: center;
+    }
+    .global-footer-language-option select{
+        width: 200px;
+    }
+    .global-footer-language-option{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width:500px) {
+    .global-footer-navigation{
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(40px, 100px)  minmax(40px, 100px)  75px;
+        padding-bottom: 10px;
+    }
+    .footer-navigation-lists{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    .footer-navigation-lists ul{
+        width: 200px;
+        border-bottom: 2px solid #0275B1;
+    }
+}
